@@ -1,0 +1,127 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 5%;
+  padding: 5%;
+  justify-content: center;
+
+  & h2 {
+    height: 2em;
+    grid-column: span 2;
+    color: var(--main);
+  }
+
+  & figure {
+    grid-column: span 2;
+  }
+
+  & iframe {
+    width: 80%;
+    height: 70vh;
+  }
+
+  & button {
+    font-size: 20pt;
+    display: flex;
+    width: 21%;
+    padding: 20px;
+    background-color: var(--main);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 50px;
+    }
+  }
+}
+
+#graphic {
+  max-width: 1000px;
+  background-color: white;
+  color: black;
+}
+
+#funcion {
+  text-align: center;
+  width: 60%;
+  outline: none;
+  padding: 10px;
+  font-size: 1.5em;
+  background: none;
+  color: white;
+  border: none;
+  transition: border-color 300ms ease-in-out;
+}
+
+#funcion:focus {
+  border-bottom: 2px solid var(--main);
+}
+
+.selection-method {
+  display: flex;
+  grid-column: span 2;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 1em;
+  & div {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & label {
+    width: 45%;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 10rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  & input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  & input[type="radio"]:checked + label {
+    background-color: var(--main);
+    transition: 300ms linear;
+  }
+}
+label:hover{
+    background-color: #73cc50;
+}
+.interval-input {
+  & h3 {
+    margin-bottom: 10px;
+  }
+
+  border: none;
+  & label {
+    background: none;
+  }
+
+  & input {
+    margin-left: 10px;
+    width: 5em;
+  }
+
+  & legend {
+    text-align: center;
+  }
+}

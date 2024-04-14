@@ -1,0 +1,20 @@
+.method-table{
+    width: 90%;
+    border-collapse: collapse;
+    
+    & tr, thead {
+        height: 2em;
+    }
+
+    & thead > tr > td {
+        background-color: black;
+    }
+
+    & tr:nth-child(odd) {
+        background-color: var(--light);
+    }
+
+    & tr:nth-child(even) {
+        background-color: var(--main);
+    }
+}

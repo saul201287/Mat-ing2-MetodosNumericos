@@ -1,0 +1,22 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: var(--black);
+
+  
+  --black: #c4c4c4;
+  --white: #122175;
+  --main: #122864;
+  --light: #4E4E4E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3{
+  color: #000;
+}
+
